@@ -32,25 +32,33 @@ $(function () {
 
     // TODO 2 - Create Platforms
  toggleGrid();
-createPlatform(500, 0, 20, 600, "darkred");
-createPlatform(700, 500, 800, 10, "darkgrey")
-createPlatform(700, 500, 1000, 700, "darkgrey")
-createPlatform(600, 630, 300, 20, "darkgrey")
-createPlatform(1200,500,300,20, "lime")
+createPlatform(650, 630, 20, 290);
+createPlatform(650, 630, 600, 20);
+createPlatform(200, 200, 400, 20);
+createPlatform(600, 300, 90, 20);
+createPlatform(900, 500, 90, 20);
+createPlatform(715, 390, 90, 20);
+createPlatform(1050, 165, 20, 200);
+createPlatform(975, 275, 330, 20);
+createPlatform(1230, 165, 20, 200);
+createBadPlatform(1055, 260, 180, 20);
+
 
 
 
     // TODO 3 - Create Collectables
-createCollectable("max", 1300, 170, 0.5, 0.7);
-createCollectable("steve", 650, 170, 0.5, 0.7);
-createCollectable("diamond", 300, 170, 0.5, 0.7);
+
 
 
     
     // TODO 4 - Create Cannons
-createCannon("top", 200, 500);
-createCannon("right", 700, 700);
- createCannon("right", 450, 300);   
+  createCannon("right",595,950);
+  createCannon("right",450,900);
+  createCannon("top",450,920);
+  createCannon("top",200,525);
+  createCannon("bottom",350,920);
+  createCannon("left", 100, 900, 20, 10, 0, 100, 2)
+  createCannon("top",1200,1000);
     
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
