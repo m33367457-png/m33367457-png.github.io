@@ -51,6 +51,7 @@ createFakePlatform(1100, 630, 300, 20,"red");
 
 
 
+
     // TODO 3 - Create Collectables
 createCollectable("database", 400, 130,)
 createCollectable("database", 1350, 200,)
