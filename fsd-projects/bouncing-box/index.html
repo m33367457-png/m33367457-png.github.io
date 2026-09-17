@@ -49,15 +49,16 @@
         });
 
         // Every 50 milliseconds, call the update Function (see below)
-        setInterval(update, 50);
+       setInterval(update, 50);
 
         // Every time the box is clicked, call the handleBoxClick Function (see below)
         box.on("click", handleBoxClick);
 
         // moves the Box to a new position on the screen along the X-Axis
-        function moveBoxTo(newPositionX) {
-          box.css("left", newPositionX);
-        }
+         function moveBoxTo(newPositionX, newPositionY) {
+  box.css("left", newPositionX);
+  box.css("top", newPositionY);
+}
 
         // changes the text displayed on the Box
         function changeBoxText(newText) {
@@ -70,9 +71,13 @@
 
         // TODO 2 - Variable declarations
        var positionX = 200;
-        var points = 0
-        var speed = 50
+        var points = 0;
+        var speed = 10;
+       var positionY = 200;
+        var speedY = 10;
+        var boardHeight = jQuery(window).height();
        
+ 
 
         /**
          * This Function will be called 20 times/second.
@@ -82,12 +87,14 @@
         function update() {
          if (positionX > boardWidth){speed *= -1;}
          if(positionX < 0){speed *= -1;}
-         moveBoxTo(positionX);
+         moveBoxTo(positionX,positionY);
         positionX += speed
-         
+          postitionY += speed
+
+
 
         }
-        
+   
         /**
          * This Function will be called each time the box is clicked.
          * Each time it is called, it should perform each of the following actions:
@@ -100,6 +107,7 @@
           points ++;
           speed = 3 * points + 10;
         positionX=0
+        positionY=200
         }
 
 
