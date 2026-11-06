@@ -120,7 +120,7 @@ var Gamification = (function () {
     player1.y = PLAYER_START_POSITIONS.player1.y;
 
     // Ensure player1 stays within canvas bounds
-    var margin = player1.radius + 10;
+    var margin = player1.radius + 1;
     if (player1.x > canvas.width - margin) player1.x = canvas.width - margin;
     if (player1.y > canvas.height - margin) player1.y = canvas.height - margin;
     if (player1.x < margin) player1.x = margin;
